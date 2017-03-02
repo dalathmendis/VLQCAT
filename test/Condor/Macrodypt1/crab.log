@@ -1,0 +1,18 @@
+DEBUG 2016-03-31 14:41:23,579: 	 Executing command: 'report'
+DEBUG 2016-03-31 14:41:23,580: 	 Found CRAB cache file /uscms/home/dmendis/.crab3
+ERROR 2016-03-31 14:41:23,592: 	 Error: /uscms_data/d3/dmendis/Rachitha7/CMSSW_7_4_16_patch2/src/Analysis/VLQAna/test/CRAB_On_B2GEDM/os2lana_v4/crab_DYJetsToLL_M-50_HT-100to200_os2lana_v2 is not a valid CRAB project directory.
+ERROR 2016-03-31 14:41:23,592: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1603.patch1/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1603.patch1/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1603.patch1/lib/python2.7/site-packages/CRABClient/Commands/report.py", line 24, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1603.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 254, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1603.patch1/lib/python2.7/site-packages/CRABClient/Commands/report.py", line 301, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1603.patch1/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 559, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /uscms_data/d3/dmendis/Rachitha7/CMSSW_7_4_16_patch2/src/Analysis/VLQAna/test/CRAB_On_B2GEDM/os2lana_v4/crab_DYJetsToLL_M-50_HT-100to200_os2lana_v2 is not a valid CRAB project directory.
